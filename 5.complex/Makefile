@@ -1,6 +1,6 @@
 complex.png complex.pdf: complex.gv
-	dot -Tpng complex.gv > complex.png
-	dot -Tpng complex.gv > complex.pdf
+	neato -Tpng complex.gv > complex.png
+	neato -Tpdf complex.gv > complex.pdf
 
 clean:
 	rm -f *png *pdf

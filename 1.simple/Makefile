@@ -4,4 +4,4 @@ simple.png simple.pdf: simple.gv
 	dot -Tpng simple.gv > simple.pdf
 
 clean:
-	rm -f simple.png simple.pdf
+	rm -f *.png *.pdf
