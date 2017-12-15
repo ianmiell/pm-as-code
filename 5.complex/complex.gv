@@ -1,0 +1,28 @@
+digraph G {
+
+  rankdir="BT"
+  #ordering=out
+  ranksep=2.0
+  overlap="false"
+  #weight=0.5
+
+  node [colour="black", shape="rectangle"]
+
+  "EH" [label="ENJOY HOLIDAY",color="red"]
+  "BT" [label="Book tickets",color="green"]
+  "PSNB" [label="Pack suitcase night before",color="red"]
+  "BGB" [label="Buy guide book",color="orange"]
+  "BEC" [label="Buy electric converter",color="orange"]
+  "GTS" [label="Go to the shops",color="orange"]
+  "GCG" [label="Get cash (GBP)",color="green"]
+  "GCD" [label="Get cash (DOLLARS)",color="orange"]
+  
+  "EH" -> "BT"
+  "EH" -> "PSNB"
+  "EH" -> "GCD"
+  "PSNB" -> "BGB"
+  "BGB" -> "GTS"
+  "PSNB" -> "BEC"
+  "BGB" -> "GCG"
+  "BEC" -> "GCG"
+}

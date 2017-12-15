@@ -1,0 +1,6 @@
+digraph G {
+  "Enjoy Holiday" -> "Book tickets"
+  "Enjoy Holiday" -> "Pack suitcase night before"
+  "Pack suitcase night before" -> "Buy guide book"
+  "Pack suitcase night before" -> "Buy electric converter"
+}

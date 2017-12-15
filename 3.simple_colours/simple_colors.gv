@@ -1,0 +1,12 @@
+digraph G {
+  "EH" [label="Enjoy Holiday",color="red"]
+  "BT" [label="Book tickets",color="green"]
+  "PSNB" [label="Pack suitcase night before",color="red"]
+  "BGB" [label="Buy guide book",color="orange"]
+  "BEC" [label="Buy electric converter",color="orange"]
+  
+  "EH" -> "BT"
+  "EH" -> "PSNB"
+  "PSNB" -> "BGB"
+  "PSNB" -> "BEC"
+}
