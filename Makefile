@@ -1,4 +1,10 @@
-GRAPHS:=$(shell ls -d *)                                                                                                                                                      
-                                                                                                                                                                                              
+GRAPHS := $(wildcard */.)
+
+print-%: ; @echo $*=$($*)
+
+all: $(GRAPHS)
+
+.PHONY: all $(GRAPHS)
+
 $(GRAPHS):
-	$(MAKE) -C $@ 
+	make -C $@ 
