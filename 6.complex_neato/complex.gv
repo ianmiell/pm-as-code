@@ -1,0 +1,34 @@
+digraph G {
+  ranksep=2.0
+  nodesep=2.0
+  overlap="false"
+  weight=0.5
+
+  node [colour="black", shape="rectangle"]
+
+  "EH" [label="ENJOY HOLIDAY\nWe want to have a good time",color="red"]
+  "BTOW" [label="Book time off\nCheck with boss that time off is OK, put in system",color="red"]
+  "BFR" [label="Book fancy restaurant\nThe one overlooking the river",color="red"]
+  "BPB" [label="Buy phrase book\nThey don't speak English, so need to know how to book",color="red"]
+  "BT" [label="Book tickets\nDo this using Expedia",color="green"]
+  "PSNB" [label="Pack suitcase night before\nSuitcase in understairs cupboard",color="red"]
+  "BGB" [label="Buy guide book\nIdeally the Time Out one",color="orange"]
+  "BEC" [label="Buy electric converter\nDon't want to get ripped off at airport",color="orange"]
+  "GTS" [label="Go to the shops\nNeed to go to town",color="orange"]
+  "GCG" [label="Get cash (GBP)\nAbout 200 quid",color="green"]
+  "GCD" [label="Get cash (DOLLARS)\nFrom bureau de change under arches",color="orange"]
+  
+  "EH" -> "BT"
+  "EH" -> "BFR"
+  "EH" -> "BTOW"
+  "BFR" -> "BPB"
+  "BPB" -> "GTS"
+  "BPB" -> "GCG"
+  "EH" -> "PSNB"
+  "EH" -> "GCD"
+  "PSNB" -> "BGB"
+  "BGB" -> "GTS"
+  "PSNB" -> "BEC"
+  "BGB" -> "GCG"
+  "BEC" -> "GCG"
+}
