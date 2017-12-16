@@ -2,7 +2,6 @@ digraph G {
   ranksep=2.0
   nodesep=2.0
   overlap="false"
-  weight=0.5
 
   node [colour="black", shape="rectangle"]
 
