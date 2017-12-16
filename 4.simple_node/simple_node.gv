@@ -3,7 +3,7 @@ digraph G {
   nodesep=2.0
   overlap="false"
 
-  node [colour="black", shape="rectangle"]
+  node [color="black", shape="rectangle"]
 
   "EH" [label="Enjoy Holiday",color="red"]
   "BT" [label="Book tickets",color="green"]
